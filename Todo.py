@@ -17,6 +17,7 @@ class todo:
         self.list_box = Listbox(frame, height=10, width=70)
         self.list_box.pack(side='left')
 
+        # A scroll feature which gives us the ability to scroll down or up just incase out tasks is more than the provided geometry for the listbox
         scroller = Scrollbar(frame)
         scroller.pack(side='right', fill=Y)
 
@@ -26,20 +27,23 @@ class todo:
         self.text = Entry(self.root, width=75)
         self.text.pack() 
 
+        #To be able to add task
         def add():
             content = self.text.get()
             if content != "":
                 self.list_box.insert(END, content)
                 self.text.delete(0, END)
             else:
-                messagebox.showwarning(title="Attention!!", message="You must enter a task.")    
+                messagebox.showwarning(title="Attention!!", message="You must enter a task.")  
+        #To be able to delete task          
         def delete():
             try:
                 content_index = self.list_box.curselection()[0]
                 task_to_delete = self.list_box.get(content_index)
                 self.list_box.delete(content_index)
             except:
-                messagebox.showwarning(title="Attention!!", message="You must enter a task.")   
+                messagebox.showwarning(title="Attention!!", message="You must enter a task.")  
+        # To be able to load task         
         def load():
             try:
                 with open("data.txt", "rb") as f:
@@ -48,11 +52,13 @@ class todo:
                 for task in tasks:
                     self.list_box.insert(END, task)
             except:
-                messagebox.showwarning(title="Attention!!", message="Cannot find data.txt file.")         
+                messagebox.showwarning(title="Attention!!", message="Cannot find data.txt file.")    
+        # To be able to save task             
         def save():
             tasks = self.list_box.get(0, self.list_box.size())
             with open("data.txt", "wb") as f:
                 pickle.dump(tasks, f)
+        # for hover features on my buttons        
         def on_enter(e):
             self.add_task['background'] = "#00ffff"
            
