@@ -10,6 +10,12 @@
         2. Delete tasks from the list
         3. Save tasks to a file
         4. Load tasks from a file
+4. ### A Simple Guessing Number Game
+    A number guessing game is a game such that the Python command-line game challenges players to guess a randomly generated number within 1 and 100. Players input their guesses and receive feedback on whether their guess is too high, too low, or correct adn the number of attempts it takes to guess the correct number
+
+5. ### A Simple Calculator App            
+    A simple calculator application built using Tkinter. This user-friendly application allows you to perform basic arithmetic operations such as addition, subtraction, multiplication, and division, as well as compute the square and square root of a number. The calculator displays both the current result and the total result of the operation being performed, giving you full visibility into your calculations. With the convenient clear button, you can easily reset the calculator and start fresh at any time. Whether you're crunching numbers for work or school, this calculator has you covered with its intuitive interface and versatile functionality.
+
 
    
 
