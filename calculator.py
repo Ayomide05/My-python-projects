@@ -96,6 +96,7 @@ class Calculator:
     def evaluate(self):
         self.total_expression += self.current_expression
         self.update_total_label()
+        #To handle Exception error
         try:
             self.current_expression = str(eval(self.total_expression)) 
 

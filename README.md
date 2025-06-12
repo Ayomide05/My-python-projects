@@ -15,6 +15,10 @@
 
 5. ### A Simple Calculator App            
     A simple calculator application built using Tkinter. This user-friendly application allows you to perform basic arithmetic operations such as addition, subtraction, multiplication, and division, as well as compute the square and square root of a number. The calculator displays both the current result and the total result of the operation being performed, giving you full visibility into your calculations. With the convenient clear button, you can easily reset the calculator and start fresh at any time. Whether you're crunching numbers for work or school, this calculator has you covered with its intuitive interface and versatile functionality.
+6. ### A personal Expense Tracker Application
+    A simple, sleek, and functional desktop application that can help to track your daily expenses. This application is built with Python, Tkinter, and CSV export capability and it includes chart visualizations and a calendar date picker. This user friendly application allow us to add and track our daily expenses with different categories. It has display a pie and a bar charts as visulaisationn for our spending insights. We can save our records to a csv file and an easy to use calendar date picker.
+
+
 
 
    
